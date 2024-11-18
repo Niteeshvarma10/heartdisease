@@ -3,7 +3,21 @@ import pandas as pd
 import pickle
 
 model_filename = 'heartpickl.pkl'
+st.markdown("""
+.result-message {
+        font-size: 24px;
+        margin-top: 1.5rem;
+        text-align: center;
+        font-weight: bold;
+    }
+    
+    .affected-message {
+        color: #e53935;
+    }
 
+
+
+""")
 with open(model_filename, 'rb') as file:
     model = pickle.load(file)
 
