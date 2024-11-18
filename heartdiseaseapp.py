@@ -72,6 +72,8 @@ def main():
         confidence = prediction_proba[0][1] if prediction[0] == 1 else prediction_proba[0][0]
 
         st.markdown(f"<p style='background-color:{bg_color}; color:white; padding:10px;'>Prediction: {prediction_result}<br></p>", unsafe_allow_html=True)
+        st.markdown("<div class='result-message affected-message'>Studies show that up to 40% of lung cancer patients have heart diseaseand brain tumours </div>", unsafe_allow_html=True)
+        st.markdown("<div class='result-message affected-message'>get checked and use our models to predict your condition</div>", unsafe_allow_html=True)
 
 if __name__ == '__main__':
     main()
