@@ -65,7 +65,7 @@ def main():
         if prediction[0] == 1:
             bg_color = 'red'
             prediction_result = 'Positive'
-            st.markdown("<div class='result-message affected-message'>Studies show that up to 40% of lung cancer patients have heart diseaseand brain tumours </div>", unsafe_allow_html=True)
+            st.markdown("<div class='result-message affected-message'>Studies show that up to 40% of lung cancer patients have heart disease and brain tumours </div>", unsafe_allow_html=True)
             st.markdown("<div class='result-message affected-message'>get checked and use our models to predict your condition</div>", unsafe_allow_html=True)
         else:
             bg_color = 'green'
